@@ -15,7 +15,7 @@ negligible risk of collision.
 
 This package is interoperable with NaCl: https://nacl.cr.yp.to/box.html.
 */
-package box // import "github.com/kevinburke/nacl/box"
+package box 
 
 import (
 	"errors"
