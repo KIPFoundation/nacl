@@ -1,0 +1,20 @@
+go_import_path: github.com/kevinburke/nacl
+
+language: go
+
+go:
+  - 1.10.x
+  - master
+
+os: linux
+dist: trusty
+
+before_script:
+  - go get -u -t ./...
+
+script:
+  - make race-test
+
+cache:
+  directories:
+    - $GOPATH/pkg
