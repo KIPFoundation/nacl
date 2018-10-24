@@ -15,7 +15,7 @@ negligible risk of collision.
 
 This package is interoperable with NaCl: https://nacl.cr.yp.to/secretbox.html.
 */
-package secretbox // import "github.com/kevinburke/nacl/secretbox"
+package secretbox 
 
 import (
 	"errors"
