@@ -20,9 +20,9 @@ package secretbox
 import (
 	"errors"
 
-	"github.com/kevinburke/nacl"
-	"github.com/kevinburke/nacl/onetimeauth"
-	"golang.org/x/crypto/salsa20/salsa"
+	"github.com/KIPFoundation/nacl"
+	"github.com/KIPFoundation/nacl/onetimeauth"
+	"github.com/KIPFoundation/crypto/salsa20/salsa"
 )
 
 // Overhead is the number of bytes of overhead when boxing a message.
