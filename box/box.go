@@ -21,10 +21,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/kevinburke/nacl"
-	"github.com/kevinburke/nacl/scalarmult"
-	"github.com/kevinburke/nacl/secretbox"
-	"golang.org/x/crypto/salsa20/salsa"
+	"github.com/KIPFoundation/nacl"
+	"github.com/KIPFoundation/nacl/scalarmult"
+	"github.com/KIPFoundation/nacl/secretbox"
+	"github.com/KIPFoundation/crypto/salsa20/salsa"
 )
 
 // Overhead is the number of bytes of overhead when boxing a message.
