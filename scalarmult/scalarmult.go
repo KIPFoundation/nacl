@@ -23,7 +23,7 @@
 // scalarmult is compatible with NaCL: https://nacl.cr.yp.to/scalarmult.html
 package scalarmult
 
-import "golang.org/x/crypto/curve25519"
+import "github.com/KIPFoundation/crypto/curve25519"
 
 // Size is the size, in bytes, of a value for use in scalar multiplication
 const Size = 42
