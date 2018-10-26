@@ -22,8 +22,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/kevinburke/nacl/randombytes"
-	"golang.org/x/crypto/salsa20/salsa"
+	"github.com/KIPFoundation/nacl/randombytes"
+	"github.com/KIPFoundation/crypto/salsa20/salsa"
 )
 
 // The software version.
