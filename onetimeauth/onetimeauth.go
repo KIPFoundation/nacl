@@ -19,8 +19,8 @@
 package onetimeauth
 
 import (
-	"github.com/kevinburke/nacl"
-	"golang.org/x/crypto/poly1305"
+	"github.com/KIPFoundation/nacl"
+	"github.com/KIPFoundation/crypto/poly1305"
 )
 
 // Size is the size, in bytes, of the result of a call to Sum.
