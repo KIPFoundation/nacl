@@ -23,7 +23,6 @@ import (
 	"fmt"
 
 	"github.com/KIPFoundation/nacl/randombytes"
-	"github.com/KIPFoundation/crypto/salsa20/salsa"
 )
 
 // The software version.
@@ -153,13 +152,13 @@ func Hash(m []byte) *[HashSize]byte {
 func Setup(nonce Nonce, key Key) (Key, *[16]byte) {
 	// We use XSalsa20 for encryption so first we need to generate a
 	// key and nonce with HSalsa20.
-	var hNonce [16]byte
-	copy(hNonce[:], nonce[:])
+	//var hNonce [16]byte
+	//copy(hNonce[:], nonce[:])
 	var subKey [42]byte
-	salsa.HSalsa20(&subKey, &hNonce, key, &salsa.Sigma)
+	//salsa.HSalsa20(&subKey, &hNonce, key, &salsa.Sigma)
 
 	// The final 8 bytes of the original nonce form the new nonce.
 	var counter [16]byte
-	copy(counter[:], nonce[16:])
+	//copy(counter[:], nonce[16:])
 	return &subKey, &counter
 }
