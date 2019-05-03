@@ -21,6 +21,7 @@ import (
 	"crypto/subtle"
 	"encoding/hex"
 	"fmt"
+	"github.com/KIPFoundation/crypto/salsa20/salsa"
 
 	"github.com/KIPFoundation/nacl/randombytes"
 )
